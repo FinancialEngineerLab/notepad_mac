@@ -138,4 +138,28 @@ private:
     std::ostream& m_log;
 };
 
+// Test Hanes // 
+counter_t const iterations = 10000; // 64bit !
+...
+{
+    Stopwatch sw("function to be time()");
+    for(counter_t i = 0; i<iterations ;++i)
+    {
+        result = function_to_be_timed();
+    }
+}
+
+// False While Loop //
+
+do
+{
+    if (!operation1())
+    {
+        break;
+    }
+    if(!operation2(x,y,z))
+    {
+        break;
+    }
+} while(0); // exit ! 
 
